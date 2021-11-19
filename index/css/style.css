@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    margin: 0 20% 0 20%;
+}
+.navbar{
+    background-color: #2C3E50;
+    width: auto;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.navbar-brand{
+    color: white;
+    font-weight: bold;
+    font-size:20px;
+    text-transform: uppercase;
+}
+.navbartravel>ul{
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    
+    
+}
+header>div:first-of-type>div:nth-child(2)>ul>li{
+list-style-type: none;   
+
+}
+header>div:first-of-type>div:nth-child(2)>ul>li>a{
+color: white;
+text-decoration: none;
+margin: 0 10px 0 10px;
+font-size: 10px;
+
+}
+.banner{
+   background-color:#DC3545;
+    height:250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+
+}
+.banner>img{
+    height:40%;
+    width:auto;
+}
+.banner>p{
+    text-transform: capitalize;
+}
+section:nth-of-type(2)>h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding: 5% 0 0 0 ;
+}
+
+.portfolioimg{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.portfolioimg>a>img{
+    width: auto;
+    height: 150px;
+    margin: 10px 10px 10px 10px;
+}
+.About{
+    background-color: #DC3545;
+    height:200px;
+    width: auto;
+}
+.About>h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding: 5% 0 0 0 ;
+    color: white;
+    
+
+}
+
+
+
