@@ -1,32 +1,35 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Montserrat";
 }
 
 body {}
 
 .navbar {
+    position: fixed;
     background-color: #2C3E50;
-    width: auto;
+    width: 100%;
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 1;
 }
 
-.navbar-brand {
+.navbar-brand>a {
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     text-transform: uppercase;
     font-weight: bolder;
+    text-decoration: none;
 }
 
 .navbartravel>ul {
     display: flex;
-    justify-content: flex-end;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 header>div:first-of-type>div:nth-child(2)>ul>li {
@@ -36,13 +39,23 @@ header>div:first-of-type>div:nth-child(2)>ul>li {
 header>div:first-of-type>div:nth-child(2)>ul>li>a {
     color: white;
     text-decoration: none;
-    margin: 0 10px 0 10px;
-    font-size: 12px;
+    padding: 16px;
+    font-size: 16px;
+}
+
+header>div:first-of-type>div:nth-child(2)>ul>li>a:hover {
+    color: #DC3545;
 }
 
 .banner>h1 {
-    font-size: 45px;
-    padding: 10px 0 15px 0;
+    font-size: 55px;
+    padding: 10px 0 30px 0;
+}
+
+.banner>p {
+    text-transform: capitalize;
+    font-size: 25px;
+    padding-bottom: 100px;
 }
 
 .banner {
@@ -54,50 +67,61 @@ header>div:first-of-type>div:nth-child(2)>ul>li>a {
     color: white;
 }
 
-.banner>img {
-    height: 170px;
+.banner>a>img:first-of-type {
+    height: 250px;
     width: auto;
-    margin-top: 40px;
+    padding: 150px 0 40px 0;
 }
 
-.banner>p {
-    text-transform: capitalize;
-    font-size: 20px;
-    padding-bottom: 50px;
+.banner>a>img:last-of-type {
+    height: 275px;
+    width: auto;
+    padding: 144px 0 40px 0;
+    margin-bottom: -15px;
+}
+
+.banner a img:last-child {
+    display: none;
+}
+
+.banner a:hover img:last-child {
+    display: block;
+}
+
+.banner a:hover img:first-child {
+    display: none;
 }
 
 section:nth-of-type(2)>h2 {
-    font-size: 35px;
+    font-size: 50px;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    padding: 5% 0 0 0;
+    padding: 8% 0 1% 0;
 }
 
 .portfolioimg,
 .portfolioimg2 {
     display: flex;
     justify-content: center;
-
 }
 
-.portfolioimg>a>img {
-    width: auto;
-    height: 180px;
-    margin: 15px 15px 0px 15px;
-    border-radius: 10px;
-}
-
+.portfolioimg>a>img,
 .portfolioimg2>a>img {
     width: auto;
-    height: 180px;
-    margin: 15px 15px 0px 15px;
-    border-radius: 10px;
-    padding-bottom: 70px;
+    height: 300px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 30px;
+    transition: all 1s;
 }
 
+.portfolioimg>a>img:hover,
+.portfolioimg2>a>img:hover {
+    transform: rotateY(180deg);
+    opacity: 0.5;
+}
 
-.About {
+#About {
     background-color: #DC3545;
     width: auto;
     splay: flex;
@@ -105,15 +129,15 @@ section:nth-of-type(2)>h2 {
     align-items: center;
 }
 
-.About>h2 {
-    font-size: 35px;
+#About>h2 {
+    font-size: 50px;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    padding: 5% 0 0 0;
+    padding: 10% 0 0 0;
     color: white;
     font-weight: bold;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
 }
 
 .paragraphes {
@@ -124,13 +148,13 @@ section:nth-of-type(2)>h2 {
 
 .paragraphes>p {
     margin: 0 10px 0 10px;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 150%;
-    padding-bottom: 50px;
-    max-width: 290px;
+    padding-bottom: 80px;
+    max-width: 360px;
 }
 
-.contact {
+#contact {
     width: auto;
     display: flex;
     align-items: center;
@@ -138,11 +162,11 @@ section:nth-of-type(2)>h2 {
     flex: 1;
 }
 
-.contact>h2 {
+#contact>h2 {
     text-transform: uppercase;
-    font-size: 35px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    font-size: 50px;
+    padding-top: 100px;
+    padding-bottom: 70px;
     font-weight: bold;
 }
 
@@ -152,6 +176,15 @@ input {
     height: 20px;
 }
 
+input,
+textarea:invalid {
+    border-bottom: 1px solid red;
+}
+
+input:valid {
+    border-bottom: 1px solid rgb(75, 158, 64, 0);
+}
+
 label {
     color: grey;
     padding-top: 30px;
@@ -159,7 +192,7 @@ label {
 
 input,
 textarea {
-    width: 400px;
+    width: 750px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -169,7 +202,7 @@ textarea {
 textarea {
     min-width: 100px;
     min-height: 100px;
-    max-width: 400px;
+    max-width: 800px;
     max-height: 200px;
     resize: none;
 }
@@ -248,7 +281,7 @@ footer>p:last-of-type {
     padding: 0 10px 0 10px;
 }
 
-.around>ul>li>img {
+.around>ul>li>a>img {
     width: auto;
     height: 30px;
     filter: invert(100%);

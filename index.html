@@ -6,7 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/favicon.ico">
-    <link rel="stylesheet" href="./index/css/style.css">
+   
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+     type="text/css" />
+     <!-- Google Fonts -->
+     <!-- Lien Css -->
+     <link rel="stylesheet" href="./index/css/style.css">
+      <!-- Lien Css -->
     <title>start-css</title>
 </head>
 
@@ -14,29 +22,34 @@
     <header>
         <!-- navbar -->
         <div class="navbar">
-            <div class="navbar-brand">Start css</div>
+            <div class="navbar-brand"><a href="#navbar-ancre">Start css</a></div>
             <div class="navbartravel">
                 <ul>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
         <!-- navbar -->
     </header>
     <!-- Banner -->
-    <section>
+    <section id="navbar-ancre">
+
         <div class="banner">
-            <img src="./img/avataaars.svg" alt="">
+            <a href="#">
+                <img src="./img/avataaars.svg" alt="f">
+                <img src="./img/vomi.png" alt="f">
+            </a>
             <h1>START CSS</h1>
             <p>graphic artist - web designer - illustrator</p>
         </div>
+
     </section>
     <!-- Banner -->
 
     <!-- Menu Portfolio -->
-    <section class="portfolio">
+    <section id="portfolio">
         <h2>Portfolio</h2>
         <div class="portfolioimg">
             <a href=""><img src="./img/portfolio/cabin.png" alt="a"></img></a>
@@ -53,7 +66,7 @@
     <!-- Menu Portfolio -->
 
     <!--Menu About -->
-    <section class="About">
+    <section id="About">
         <h2>About</h2>
         <div class="paragraphes">
             <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete
@@ -65,19 +78,18 @@
     <!--Menu About -->
 
     <!--Menu Contact -->
-    <section class="contact">
-
+    <section id="contact">
         <h2>Contact me</h2>
 
         <form action="" method="">
             <label for="Name">Name </label><br>
-            <input type="text" id="nom"><br>
+            <input type="text" id="name" required><br>
             <label for="nom">Email Address</label> <br>
-            <input type="email" id="email"><br>
+            <input type="email" id="mail" required><br>
             <label for="email">Phone Number</label> <br>
-            <input type="number" id="Phone"><br>
-            <label for="msg">Message </label> <br>
-            <textarea id="msg" name="mesgtxt"></textarea>
+            <input type="number" id="Phone" required [04....]><br>
+            <label for="Message">Message </label> <br>
+            <textarea id="message" name="mesgtxt" required></textarea>
             <br>
             <button type="submit">Send</button>
         </form>
@@ -89,20 +101,22 @@
                 <h2>location</h2>
                 <p>2215 John Daniel Drive <br>Clark, MO 65243</p>
             </div>
-
+            <!-- liens réseaux -->
             <div class="around">
-                <h2>Aroud the web</h2>
+                <h2>Around the web</h2>
                 <ul>
-                    <li><img src="./img/facebook-f-brands.svg" alt=""></li>
-                    <li><img src="./img/twitter-brands.svg" alt=""></li>
-                    <li><img src="./img/linkedin-in-brands.svg" alt=""></li>
-                    <li><img src="./img/dribbble-brands.svg" alt=""></li>
+                    <li><a href="https://www.facebook.com/"><img src="./img/facebook-f-brands.svg" alt=""></a></li>
+                    <li><a href="https://twitter.com/?lang=en"><img src="./img/twitter-brands.svg" alt=""></a></li>
+                    <li><a href="https://be.linkedin.com/"><img src="./img/linkedin-in-brands.svg" alt=""></a></li>
+                    <li><a href="https://dribbble.com/"><img src="./img/dribbble-brands.svg" alt=""></a></li>
                 </ul>
             </div>
+            <!-- liens réseaux -->
+
             <div class="aboutfooter">
                 <h2>About freelancer</h2>
                 <p>Freelance is a free to use, MIT <br> licenced Bootstrap theme created by <br>
-                    <a href="" class="Start">Start Bootstrap</a> .
+                    <a href="https://startbootstrap.com/" class="Start">Start Bootstrap</a> .
                 </p>
 
             </div>
