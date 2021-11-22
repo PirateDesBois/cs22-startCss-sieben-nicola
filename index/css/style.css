@@ -3,9 +3,6 @@
     padding: 0;
     font-family: "Montserrat";
 }
-
-body {}
-
 .navbar {
     position: fixed;
     background-color: #2C3E50;
@@ -75,7 +72,7 @@ header>div:first-of-type>div:nth-child(2)>ul>li>a:hover {
 
 .banner>a>img:last-of-type {
     height: 275px;
-    width: auto;
+    width: 280px;
     padding: 144px 0 40px 0;
     margin-bottom: -15px;
 }
@@ -123,10 +120,6 @@ section:nth-of-type(2)>h2 {
 
 #About {
     background-color: #DC3545;
-    width: auto;
-    splay: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 #About>h2 {
@@ -134,7 +127,7 @@ section:nth-of-type(2)>h2 {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    padding: 10% 0 0 0;
+    padding: 5% 0 0 0;
     color: white;
     font-weight: bold;
     padding-bottom: 70px;
@@ -250,6 +243,8 @@ footer>p:last-of-type {
     padding: 15px 0 15px 0;
     display: flex;
     justify-content: center;
+    text-align: center;
+    line-height: 15px;
 }
 
 .aboutfooter {
